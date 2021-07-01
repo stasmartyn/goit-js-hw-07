@@ -15,14 +15,12 @@ const images = [
       alt: 'Group of Horses Running',
     },
   ];
-
+let galeryItems='';
   const galeriLIst=document.getElementById('gallery');
 
   for(let imege of images){
+galeryItems+=`<li><img src=\"${imege.url}\" alt=\"${imege.alt}\"><\/li>`;
 
-    galeriLIst.insertAdjacentHTML('beforeend',`<li><img src=\"${imege.url}\" alt=\"${imege.alt}\"><\/li> `);
-
-   
   };
 
-  galeriLIst.classList.add('img-list')
+  galeriLIst.insertAdjacentHTML('beforeend',galeryItems);

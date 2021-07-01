@@ -11,6 +11,6 @@ const ingredients = [
   for(let ingredient of ingredients){
 
     let node=document.createElement('li');
-    node.appendChild(document.createTextNode(ingredient));
-cooklist.appendChild(node);
+    node.append(document.createTextNode(ingredient));
+cooklist.append(node);
   };
